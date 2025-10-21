@@ -5,7 +5,7 @@ import axios from "axios";
 
 const API_URL = "https://images-api.nasa.gov/search?q=";
 
-// ---------------- Home Component ----------------
+
 function Home() {
   const [images, setImages] = useState([]);
   const [query, setQuery] = useState("galaxy");
@@ -70,16 +70,17 @@ function Home() {
 
   return (
     <div
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        padding: "20px",
-        background: "#f0f4f8",
-      }}
+    style={{
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "20px",
+    background: "linear-gradient(to bottom, #0b132b, #1c2541, #3a506b)",
+    color: "white",
+    }}
     >
-      <h1>🌌 NASA Image Gallery</h1>
+      <h1 style={{ fontSize: "2rem", marginBottom: "20px" }}>🚀 NASA Image Gallery</h1>
 
       <input
         type="text"
