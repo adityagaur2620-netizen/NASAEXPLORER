@@ -91,13 +91,17 @@ function Home() {
         value={query}
         onChange={handleSearch}
         style={{
-          padding: "10px",
+          padding: "10px", 
           width: "250px",
-          marginBottom: "20px",
-          borderRadius: "8px",
-          border: "1px solid #ccc",
+          marginbottom: "20px",
+          borderradius: "20px",
+          border: "1px solid #140b0bff", 
+          fontsize: "16px", 
+          outline: "none", 
+          boxshadow: "0 2px 5px rgba(0,0,0,0.1)",
         }}
-      />
+        />
+        
 
       {error && <p style={{ color: "red" }}>{error}</p>}
 
