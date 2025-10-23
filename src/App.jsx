@@ -83,7 +83,7 @@ function Home() {
     color: "white",
     }}
     >
-      <h1>🌌 NASA Image Gallery</h1>
+      <h1>🌌 NASA Image Library</h1>
 
       <input
         type="text"
