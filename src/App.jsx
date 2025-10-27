@@ -58,7 +58,7 @@ function Home() {
     debounceTimer.current = setTimeout(() => {
       setPage(1);
       setHasMore(true);
-      fetchImages(value || "galaxy");
+      fetchImages(value || "mars");
     }, 600);
   };
 
@@ -191,6 +191,21 @@ function Home() {
                   >
                     View Details
                   </Link>
+                  <a
+                  href={img.url}
+                  download
+                  style={{
+                  marginTop: "10px",
+                  color: "#fff",
+                  background: "#28a745",
+                  padding: "5px 10px",
+                  borderRadius: "6px",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+                >
+                  ⬇ Download
+                  </a>
                 </div>
               </div>
             </div>
